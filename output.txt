@@ -3,7 +3,7 @@
 +                  130, 98, 75, 98, 98, 111, 98, 87, 98, 98, 56, 98, 98, 211, 64,
 +                  17, 18, 28, 21, 24, 24, 20, 16, 24, 16, 20, 20, 18, 12, 19,
 +                  3399, 2099, 899, 1399, 1799, 1199, 1699, 1999, 2199, 2099, 890, 1899, 1799, 3449, 1198), 15, 4)
-> labels <- c("1", "2", "3", "4")
+> labels <- c("1", "2", "3", "4", "5")
 > result <- c(2, 3, 4, 4, 3, 4, 4, 3, 3, 4, 3, 3, 4, 2, 3)
 > test <- factor(result, labels)
 > colnames(data) <- c("Cooler_storage_volume", "Freezer_storage_volume", "Temp_keep_in_h_if_power_outage", "Price")
@@ -27,7 +27,7 @@ Call:
 C5.0.default(x = data[, ], y = test, rules = TRUE)
 
 
-C5.0 [Release 2.07 GPL Edition]  	Sat Jun 03 18:05:18 2017
+C5.0 [Release 2.07 GPL Edition]  	Tue Jun 13 10:48:42 2017
 -------------------------------
 
 Class specified by attribute `outcome'
@@ -67,12 +67,13 @@ Evaluation on training data (15 cases):
 	     4    0( 0.0%)   <<
 
 
-	   (a)   (b)   (c)   (d)    <-classified as
-	  ----  ----  ----  ----
-	                            (a): class 1
-	           2                (b): class 2
-	                 7          (c): class 3
-	                       6    (d): class 4
+	   (a)   (b)   (c)   (d)   (e)    <-classified as
+	  ----  ----  ----  ----  ----
+	                                  (a): class 1
+	           2                      (b): class 2
+	                 7                (c): class 3
+	                       6          (d): class 4
+	                                  (e): class 5
 
 
 	Attribute usage:
